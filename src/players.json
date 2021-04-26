@@ -1,0 +1,28 @@
+{
+    "Players": [
+        {
+            "playerId":1,
+            "name":"Karl Krueger"
+        },
+        {
+            "playerId":2,
+            "name":"Aaron Ashworth"
+        },
+        {
+            "playerId":3,
+            "name":"Elliot Earnshaw"
+        },
+        {
+            "playerId":4,
+            "name":"Tony Troy"
+        },
+        {
+            "playerId":5,
+            "name":"Sally Smith"
+        },
+        {
+            "playerId":6,
+            "name":"Bob Bronson"
+        }
+    ]
+}

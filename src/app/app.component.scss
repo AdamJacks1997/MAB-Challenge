@@ -1,0 +1,115 @@
+.leaderboard {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    background: #668891;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.12);
+
+    &__header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 6px;
+    }
+
+    &__logo {
+        position: relative;
+        width: 143px;
+        height: 35px;
+        margin-bottom: 10px;
+
+        svg {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.scrabble {
+    display: flex;
+    margin-bottom: 5px;
+
+    &__letter {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        width: 7.5vw;
+        max-width: 30px;
+        height: 7.5vw;
+        max-height: 30px;
+        margin: 0 1px;
+        border: 1px solid #c63f00;
+        border-radius: 5px;
+        background: #f26a2c;
+        color: #fff;
+
+        @media screen and (min-width: 600px) {
+            font-size: 24px;
+            width: 40px;
+            max-width: none;
+            height: 40px;
+            max-height: none;
+        }
+
+        &::before {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0,0,0,0.06) 0%, rgba(255,255,255,0) 100%);
+        }
+    }
+
+    &__score {
+        display: none;
+        position: absolute;
+        right: 4px;
+        bottom: 2px;
+        color: #fff;
+        font-size: 12px;
+
+        @media screen and (min-width: 600px) {
+            display: block;
+        }
+    }
+}
+
+table {
+    width: 100%;
+
+    tr {
+        background: #fff;
+
+        &:nth-child(odd) {
+            background: #e0e7e9;
+        }
+    }
+
+    th {
+        padding: 6px 6px;
+        text-align: left;
+        background: #fff;
+
+        @media screen and (min-width: 600px) {
+            padding: 6px 12px;
+        }
+    }
+
+    td {
+        padding: 6px 6px;
+
+        @media screen and (min-width: 600px) {
+            padding: 6px 12px;
+        }
+    }
+}
